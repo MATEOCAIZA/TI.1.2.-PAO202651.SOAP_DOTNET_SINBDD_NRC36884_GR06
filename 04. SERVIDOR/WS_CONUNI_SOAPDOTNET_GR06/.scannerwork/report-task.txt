@@ -1,0 +1,6 @@
+projectKey=Prueba_CLICON_SOAPDOTNET
+serverUrl=http://localhost:10000
+serverVersion=26.5.0.122743
+dashboardUrl=http://localhost:10000/dashboard?id=Prueba_CLICON_SOAPDOTNET
+ceTaskId=5b965fa7-08a6-4a78-8c85-880702f9baea
+ceTaskUrl=http://localhost:10000/api/ce/task?id=5b965fa7-08a6-4a78-8c85-880702f9baea
