@@ -303,8 +303,8 @@ namespace ec.edu.monster.vista
             }
             else if (categoria == "longitud")
             {
-                _origenComboBox.Items.AddRange(new object[] { "m", "cm", "km", "in", "gt" });
-                _destinoComboBox.Items.AddRange(new object[] { "m", "cm", "km", "in", "gt" });
+                _origenComboBox.Items.AddRange(new object[] { "m", "cm", "km", "in", "ft" });
+                _destinoComboBox.Items.AddRange(new object[] { "m", "cm", "km", "in", "ft" });
             }
             else if (categoria == "temperatura")
             {
@@ -336,7 +336,7 @@ namespace ec.edu.monster.vista
             _contentPanel.Visible = true;
             _contentPanel.BringToFront();
             AcceptButton = _convertButton;
-            Text = "Conversor de Unidades (SOAP)";
+            Text = "SOAP .NET - Conversor de Unidades";
         }
 
         private void LoginButton_Click(object sender, EventArgs e)
