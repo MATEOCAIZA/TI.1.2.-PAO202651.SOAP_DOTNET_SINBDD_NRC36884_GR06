@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using ec.edu.monster.modelo;
-using CLIESC_CONUNI_SOAPDOTNET_GR01.ServiceReference1;
+using CLIESC_CONUNI_SOAPDOTNET_GR06.ServiceReference1;
 
 namespace ec.edu.monster.vista
 {

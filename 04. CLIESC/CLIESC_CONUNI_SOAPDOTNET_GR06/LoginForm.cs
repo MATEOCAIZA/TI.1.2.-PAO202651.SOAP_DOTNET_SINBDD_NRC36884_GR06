@@ -42,7 +42,7 @@ namespace ec.edu.monster.vista
             this.MaximizeBox = false;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Conversor de Unidades - Login";
+            this.Text = "SOAP .NET - Login";
             this.AcceptButton = this.btnLogin;
 
             // Contenedor general
@@ -158,7 +158,7 @@ namespace ec.edu.monster.vista
             string[] tryPaths = {
                 "monsterLogin.jpg",
                 "Content\\monsterLogin.jpg",
-                "04. CLIWEB\\CLIWEB_CONUNI_SOAPDOTNET_GR01\\Content\\monsterLogin.jpg"
+                "04. CLIWEB\\CLIWEB_CONUNI_SOAPDOTNET_GR06\\Content\\monsterLogin.jpg"
             };
 
             var dir = new DirectoryInfo(baseDir);

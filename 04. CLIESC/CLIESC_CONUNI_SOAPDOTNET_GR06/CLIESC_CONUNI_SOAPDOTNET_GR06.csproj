@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{205541F0-C475-455A-A6CD-17E7D885A23A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>CLIESC_CONUNI_SOAPDOTNET_GR01</RootNamespace>
-    <AssemblyName>CLIESC_CONUNI_SOAPDOTNET_GR01</AssemblyName>
+    <RootNamespace>CLIESC_CONUNI_SOAPDOTNET_GR06</RootNamespace>
+    <AssemblyName>CLIESC_CONUNI_SOAPDOTNET_GR06</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

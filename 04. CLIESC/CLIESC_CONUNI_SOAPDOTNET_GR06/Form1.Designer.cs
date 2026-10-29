@@ -183,7 +183,7 @@
             this.Controls.Add(this.lblCategory);
             this.Controls.Add(this.lblTitle);
             this.Name = "Form1";
-            this.Text = "Conversor de Unidades";
+            this.Text = "SOAP .NET - Conversor de Unidades";
             this.ResumeLayout(false);
             this.PerformLayout();
         }

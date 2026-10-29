@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Windows.Forms;
-using CLIESC_CONUNI_SOAPDOTNET_GR01.ServiceReference1;
+using CLIESC_CONUNI_SOAPDOTNET_GR06.ServiceReference1;
 
 namespace ec.edu.monster.vista
 {
@@ -52,7 +52,7 @@ namespace ec.edu.monster.vista
 
         private void BuildLayout()
         {
-            Text = "Monster App - SOAP Conversor";
+            Text = "SOAP .NET - Conversor de Unidades";
             StartPosition = FormStartPosition.CenterScreen;
             ClientSize = new Size(980, 560);
             FormBorderStyle = FormBorderStyle.FixedDialog;
@@ -322,7 +322,7 @@ namespace ec.edu.monster.vista
             _loginRootPanel.Visible = true;
             _contentPanel.Visible = false;
             AcceptButton = _loginButton;
-            Text = "Iniciar sesión - Monster App";
+            Text = "SOAP .NET - Iniciar sesión";
             _usuarioTextBox.Clear();
             _contrasenaTextBox.Clear();
             _loginMessageLabel.Text = "";

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CLIESC_CONUNI_SOAPDOTNET_GR01.Properties
+namespace CLIESC_CONUNI_SOAPDOTNET_GR06.Properties
 {
 
 

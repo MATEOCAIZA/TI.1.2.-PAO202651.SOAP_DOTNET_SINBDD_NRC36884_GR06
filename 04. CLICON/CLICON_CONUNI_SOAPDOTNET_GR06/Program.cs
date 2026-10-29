@@ -1,6 +1,6 @@
 ﻿using System;
 using ec.edu.monster.modelo;
-using CLICON_CONUNI_SOAPDOTNET_GR01.ServiceReference1;
+using CLICON_CONUNI_SOAPDOTNET_GR06.ServiceReference1;
 
 namespace ec.edu.monster.vista
 {

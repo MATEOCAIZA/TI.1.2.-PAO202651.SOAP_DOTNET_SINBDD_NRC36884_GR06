@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CLIESC_CONUNI_SOAPDOTNET_GR01.ServiceReference1 {
+namespace CLIESC_CONUNI_SOAPDOTNET_GR06.ServiceReference1 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -23,12 +23,12 @@ namespace CLIESC_CONUNI_SOAPDOTNET_GR01.ServiceReference1 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IService1Channel : CLIESC_CONUNI_SOAPDOTNET_GR01.ServiceReference1.IService1, System.ServiceModel.IClientChannel {
+    public interface IService1Channel : CLIESC_CONUNI_SOAPDOTNET_GR06.ServiceReference1.IService1, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class Service1Client : System.ServiceModel.ClientBase<CLIESC_CONUNI_SOAPDOTNET_GR01.ServiceReference1.IService1>, CLIESC_CONUNI_SOAPDOTNET_GR01.ServiceReference1.IService1 {
+    public partial class Service1Client : System.ServiceModel.ClientBase<CLIESC_CONUNI_SOAPDOTNET_GR06.ServiceReference1.IService1>, CLIESC_CONUNI_SOAPDOTNET_GR06.ServiceReference1.IService1 {
         
         public Service1Client() {
         }

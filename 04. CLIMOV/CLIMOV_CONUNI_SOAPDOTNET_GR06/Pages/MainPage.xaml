@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CLIMOV_CONUNI_SOAPDOTNET_GR06.Pages.MainPage"
+             BackgroundColor="#F4F0FF"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="18,20" Spacing="16" MaximumWidthRequest="480">
+
+            <!-- Cabecera con imagen y cierre de sesion -->
+            <Border StrokeThickness="0" StrokeShape="RoundRectangle 26" HeightRequest="170">
+                <Grid>
+                    <Image Source="monster_door.jpg" Aspect="AspectFill" />
+                    <BoxView>
+                        <BoxView.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                <GradientStop Color="#EE3B1F7A" Offset="0" />
+                                <GradientStop Color="#223B1F7A" Offset="1" />
+                            </LinearGradientBrush>
+                        </BoxView.Background>
+                    </BoxView>
+                    <VerticalStackLayout VerticalOptions="Center" Padding="22" Spacing="2">
+                        <Label Text="CONVERSOR DE UNIDADES" TextColor="#CDBEFF" FontSize="12" FontAttributes="Bold" CharacterSpacing="2" />
+                        <Label Text="Monsters, Inc." TextColor="White" FontSize="28" FontAttributes="Bold" />
+                        <Label Text="Servicio SOAP .NET" TextColor="#E4DBFF" FontSize="13" />
+                    </VerticalStackLayout>
+                    <Button Text="Salir"
+                            Clicked="OnLogoutClicked"
+                            HorizontalOptions="End"
+                            VerticalOptions="Start"
+                            Margin="12"
+                            Padding="14,0"
+                            HeightRequest="36"
+                            BackgroundColor="#33FFFFFF"
+                            TextColor="White"
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            CornerRadius="18" />
+                </Grid>
+            </Border>
+
+            <!-- Formulario -->
+            <Border BackgroundColor="White" Stroke="#E4DBFF" StrokeThickness="1" StrokeShape="RoundRectangle 24" Padding="22">
+                <VerticalStackLayout Spacing="0">
+                    <Label Text="Categoria" FontSize="13" TextColor="#4B3D73" FontAttributes="Bold" Margin="0,0,0,6" />
+                    <Border Stroke="#DCD2F7" StrokeShape="RoundRectangle 14" BackgroundColor="#FAF8FF" Padding="12,0" Margin="0,0,0,14">
+                        <Picker x:Name="CategoryPicker" SelectedIndexChanged="OnCategoryChanged" TextColor="#24124F" />
+                    </Border>
+
+                    <Grid ColumnDefinitions="*,Auto,*" ColumnSpacing="8">
+                        <VerticalStackLayout>
+                            <Label Text="Desde" FontSize="13" TextColor="#4B3D73" FontAttributes="Bold" Margin="0,0,0,6" />
+                            <Border Stroke="#DCD2F7" StrokeShape="RoundRectangle 14" BackgroundColor="#FAF8FF" Padding="12,0">
+                                <Picker x:Name="FromPicker" TextColor="#24124F" />
+                            </Border>
+                        </VerticalStackLayout>
+                        <Label Grid.Column="1" Text="→" FontSize="22" TextColor="#6A3FE0" VerticalOptions="End" Margin="0,0,0,10" />
+                        <VerticalStackLayout Grid.Column="2">
+                            <Label Text="Hacia" FontSize="13" TextColor="#4B3D73" FontAttributes="Bold" Margin="0,0,0,6" />
+                            <Border Stroke="#DCD2F7" StrokeShape="RoundRectangle 14" BackgroundColor="#FAF8FF" Padding="12,0">
+                                <Picker x:Name="ToPicker" TextColor="#24124F" />
+                            </Border>
+                        </VerticalStackLayout>
+                    </Grid>
+
+                    <Label Text="Valor" FontSize="13" TextColor="#4B3D73" FontAttributes="Bold" Margin="0,16,0,6" />
+                    <Border Stroke="#DCD2F7" StrokeShape="RoundRectangle 14" BackgroundColor="#FAF8FF" Padding="12,2">
+                        <Entry x:Name="ValueEntry"
+                               Keyboard="Numeric"
+                               TextColor="#24124F"
+                               PlaceholderColor="#A79FC2"
+                               Placeholder="0"
+                               HeightRequest="46" />
+                    </Border>
+
+                    <Label x:Name="ErrorLabel"
+                           TextColor="#D6336C"
+                           FontSize="13"
+                           Margin="0,10,0,0" />
+
+                    <Grid ColumnDefinitions="*,2*" ColumnSpacing="12" Margin="0,14,0,0">
+                        <Button Text="Limpiar"
+                                Clicked="OnClearClicked"
+                                BackgroundColor="#EDE6FF"
+                                TextColor="#6A3FE0"
+                                FontAttributes="Bold"
+                                CornerRadius="24"
+                                HeightRequest="48" />
+                        <Button Text="Convertir"
+                                Grid.Column="1"
+                                Clicked="OnConvertClicked"
+                                BackgroundColor="#6A3FE0"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                CornerRadius="24"
+                                HeightRequest="48" />
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Resultado -->
+            <Border StrokeThickness="0" StrokeShape="RoundRectangle 24" Padding="22">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#6A3FE0" Offset="0" />
+                        <GradientStop Color="#2FB8C9" Offset="1" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <VerticalStackLayout Spacing="4">
+                    <Label Text="Resultado" FontSize="13" TextColor="#E4DBFF" FontAttributes="Bold" />
+                    <Label x:Name="ResultLabel"
+                           Text="0"
+                           FontSize="24"
+                           FontAttributes="Bold"
+                           TextColor="White" />
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
